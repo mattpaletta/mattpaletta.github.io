@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Cache-control" content="public">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+    <title>Just For Fun</title>
+
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    
+    <script src="js/Chart.js"></script>
+    
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-24516997-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+<body>
+<nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+        <a id="logo-container" href="index.html" class="brand-logo">Techguyification</a>
+        <ul class="right hide-on-med-and-down" id="nav-items">
+            <li><a class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Home" href="index.html"><i class="material-icons">home</i></a></li>
+            <li><a class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Film Projects" href="digital.html"><i class="material-icons" alt="Film Projects">video_library</i></a></li>
+            <li><a class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Services" href="products.html"><i class="material-icons" alt="Services">shop</i></a></li>
+            <li><a class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Just For Fun" href="justforfun.html"><i class="material-icons" alt="Just For Fun">star</i></a></li>
+            <li><a class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Contact" href="mailto:mattpaletta@gmail.com"><i class="material-icons" alt="Contact">email</i></a></li>
+        </ul>
+
+        <ul id="nav-mobile" class="side-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="digital.html">Film Projects</a></li>
+            <li><a href="products.html">Services</a></li>
+            <li><a href="justforfun.html">Just For Fun</a></li>
+            <li><a href="mailto:mattpaletta@gmail.com">Contact</a></li>
+        </ul>
+        <a href="#" data-activates="nav-mobile" class="button-collapse black-text"><i class="material-icons">menu</i></a>
+    </div>
+</nav>
+  
+<div id="index-banner" class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+        <div class="container">
+            <h3 class="header center deep-orange-text ">Bring your projects to life</h3>
+        </div>
+    </div>
+    <div class="parallax"><img src="images/DPP_0608.jpeg" alt="Unsplashed background img 1"></div>
+</div>
+    
+<div class="container">
+    <div class="row">
+       <div class="col s12 m9 l10">
+           <div id="services" class="section scrollspy">
+                <h2>Just For Fun</h2>
+                <p class="light">Although I'm not a big fan of mushrooms, I consider myself a pretty fun-gi.  Anyways, here are some of the fun things that I've done that I wanted to share with all of you.  Hopefully it inspires you to do fun things as well.  There's links to download all of the code on the page, or run the application (where applicable).</p>
+            </div>
+            <hr>
+           <div id="blockbreaker" class="section scrollspy">
+                <h5 class="black-text">Block Breaker</h5>
+                <p>Block Breaker is a classic game, it's been around forever.  So, I thought I would give it a go and try and make my own version.  But what game isn't better with powerups.  So, I also added some powerups to make gameplay more interesting.  There are 6 levels, give it a shot and try to beat the game.  Good luck.  The controls are very basic, use the left and right arrow keys on the computer to move the paddle.<br></p>
+                <a class="waves-effect waves-light btn modal-trigger blue" href="#modal3">Play Block Breaker</a><br><br>
+               
+               Click one of the options below to download:<br>
+               <a class="waves-effect waves-light btn blue" href="http://techguyification.com/funprojects/bricks.html" download="BlockBreakerCode">Javascript Code</a>
+           </div>
+            <div id="tictac" class="section scrollspy">
+                <h5 class="black-text">Unbeatable Tic-Tac-Toe</h5>
+                <p>Many games where a player (Human) plays against a computer involves some form of what’s called a min-max algorithm.  I will try and explain the min-max algorithm, but if you want to learn more, there’s tons of information online.  You can download the Javascript code for this application and play against the AI using the links below.<br>
+                    <a class="waves-effect waves-light btn modal-trigger blue" href="#modal1">Play Tic Tac Toe</a><br><br>
+                    
+Click one of the options below to download:<br>
+<a class="waves-effect waves-light btn blue" href="http://techguyification.com/funprojects/tictac.js" download="TicTac_Code">Javascript Code</a>
+<br>
+<br>The basic principle of the min-max algorithm, is the computer tries to maximize its score while minimizing the opponents score, hence min-max.  The computer also assumes that both people will play the best move every time.<br>
+<br>
+<br>
+The code begins with the player (Human) clicking on a square.  The row and column of that button are passed in to the makemove() function.  The pseudocode for tictactoe is as follows:<br>
+<br>
+makemove(row, col)<br>
+&emsp;A = new 3x3 array. //Lets assume 0 is an empty square.  1 is the player, 2 is the computer.<br>
+<br>
+&emsp;Insert the player’s move.<br>
+<br>
+&emsp;If the game is over.<br>
+&emsp;&emsp;endgame(A)<br>
+&emsp;&emsp;return; // Quit the program.<br>
+<br>
+&emsp;result <— move(A)<br>
+&emsp;put the rows and columns onto the board<br>
+<br>
+&emsp;if the game is over<br>
+&emsp;&emsp;endgame(A)<br>
+&emsp;&emsp;return // Quit the program<br>
+<br>
+<br>
+Now let's cover the endgame function, since it’s pretty straightforward and short.<br>
+<br>
+endgame(A)<br>
+&emsp;if player 1 won<br>
+&emsp;&emsp;display “Player 1 Won!”<br>
+&emsp;else if computer won<br>
+&emsp;&emsp;display “Computer Won!”<br>
+&emsp;else<br>
+&emsp;&emsp;display “The game Ended In A Draw”<br>
+<br>
+And now that we got that out of the way, let's go on to the move function, where the fun really begins.<br>
+<br>
+move(A)<br>
+&emsp;// Here we pass in the current board, the starting depth, and the player that will move next (computer).  We will come back to this.<br>
+&emsp;result <— minmax(A, 0, “computer”)<br>
+<br>
+&emsp;// result is an array as follows: [bestscore, bestRow, bestCol]  We will explore this in minmax()<br>
+<br>
+&emsp;row<— result[1]<br>
+&emsp;col <— result[2]<br>
+<br>
+&emsp;return [row, col]  // return an array containing the best row and best column<br>
+<br>
+<br>
+minmax(A, depth, player)<br>
+&emsp;moves[] = get_available_moves(A)<br>
+<br>
+&emsp;// These four variables we will use throughout the code, so let’s just declare them here.<br>
+&emsp;initialize currscore for later<br>
+&emsp;bestRow <— -1<br>
+&emsp;bestCol <— -1<br>
+&emsp;initialize bestscore for later<br>
+<br>
+&emsp;if player 1 won OR computer won OR the game is over<br>
+&emsp;&emsp;bestscore <— score(A, depth)<br>
+&emsp;else <br>
+&emsp;&emsp;if player = “computer”<br>
+&emsp;&emsp;&emsp;bestscore = -Infinity<br>
+<br>
+&emsp;&emsp;&emsp;for every move, i, in moves<br>
+&emsp;&emsp;&emsp;&emsp;row <— row in current move<br>
+&emsp;&emsp;&emsp;&emsp;col <— column in current move<br>
+<br>
+&emsp;&emsp;&emsp;&emsp;insert that place as the computer’s move<br>
+<br>
+&emsp;&emsp;&emsp;&emsp;// Here we pass in depth+1, because it’s one more recursive call. We will use this later.  We also want the opponent to “play” now, so we alternate who makes a move.  And we get the [0] index, because that is where the score found will be returned at the end of the code.<br>
+&emsp;&emsp;&emsp;&emsp;currscore <— minmax(A, depth+1, “opponent”)[0]<br>
+	<br>
+&emsp;&emsp;&emsp;&emsp;if currscore > bestscore<br>
+&emsp;&emsp;&emsp;&emsp;&emsp;bestscore <— currscore<br>
+&emsp;&emsp;&emsp;&emsp;&emsp;bestRow = row<br>
+&emsp;&emsp;&emsp;&emsp;&emsp;bestCol = col<br>
+<br>
+&emsp;&emsp;&emsp;&emsp;undo that move we just tried above<br>
+&emsp;else if player = “opponent”<br>
+&emsp;&emsp;bestscore = Infinity<br>
+<br>
+&emsp;&emsp;for every move, i, in moves<br>
+&emsp;&emsp;&emsp;row <— row in current move<br>
+&emsp;&emsp;&emsp;col <— column in current move<br>
+<br>
+&emsp;&emsp;&emsp;insert that place as the opponent’s move<br>
+<br>
+&emsp;&emsp;&emsp;// Here we pass in depth+1, because it’s one more recursive call. We will use this later.  We also want the computer to “play” now, so we alternate who plays.  And we get the [0] index, because that is where the score found will be returned at the end of the code.<br>
+&emsp;&emsp;&emsp;currscore <— minmax(A, depth+1, “computer”)[0]<br>
+<br>
+&emsp;&emsp;&emsp;if currscore < bestscore<br>
+&emsp;&emsp;&emsp;&emsp;bestscore <— currscore<br>
+&emsp;&emsp;&emsp;&emsp;bestRow = row<br>
+&emsp;&emsp;&emsp;&emsp;bestCol = col<br>
+<br>
+&emsp;&emsp;&emsp;&emsp;undo that move we just tried above<br>
+<br>
+&emsp;// Return an array containing the best score, row, and column found so far.<br>
+&emsp;return [bestscore, bestRow, bestCol]<br>
+<br>
+There are 8 other helper methods in the code, but first I want to explain how this algorithm works, because if you’re not familiar with recursion, it can be a little tricky.<br>
+<br>
+At every call of the recursive algorithm, the computer gathers all of the empty square, store in moves.  It then tries them on at a time, recursively.  Meaning it will consider the board in that state, then it will keep playing that version of the game until somebody wins, or the there are no move possible moves.<br>
+<br>
+The tree of calls, if you will, might look like the following.  This is a simplification for the sake of both your time and my time.<br>
+<br>
+<br>
+<img src="funprojects/tictacDiagram.png" style="width: 100%;"><br>
+<br>
+<br>
+<br>
+And now for the helper methods, starting with get_available_moves.<br>
+<br>
+get_available_moves(A)<br>
+&emsp;if player 1 won OR player 2 won<br>
+&emsp;&emsp;return an empty array<br>
+<br>
+&emsp;moves = empty array<br>
+&emsp;for every row, i in A<br>
+&emsp;&emsp;for every column, j, in A<br>
+&emsp;&emsp;&emsp;if A[i][j] is empty<br>
+&emsp;&emsp;&emsp;&emsp;sq <— [i, j] //an array containing the current row and column<br>
+&emsp;&emsp;&emsp;&emsp;add sq to moves.<br>
+<br>
+&emsp;return moves // return the list of all the moves found<br>
+<br>
+<br>
+gameover(A)<br>
+&emsp;for every row, i, in A<br>
+&emsp;&emsp;for every column, j, in A<br>
+&emsp;&emsp;&emsp;if the current square is not empty<br>
+&emsp;&emsp;&emsp;&emsp;return false<br>
+&emsp;return true<br>
+<br>
+If it never hits an empty square, then there must be at least one more move, so return true.  <br>
+<br>
+score(A, depth)<br>
+&emsp;if player 1 won<br>
+&emsp;&emsp;return depth-100<br>
+&emsp;else if computer won<br>
+&emsp;&emsp;return 100-depth<br>
+&emsp;else<br>
+&emsp;&emsp;return 0<br>
+<br>
+At the end of the recursive calls, meaning there are no more free squares, or somebody won, the minmax algorithm will call score.  If the computer won, by subtracting depth from the arbitrary score of 100 for winning, we ensure that the computer will try to win in the least number of moves.  If the player won, then it returns depth-100, meaning a smaller score for the player will result in least number of moves.  This means that the minimal algorithm can consider both people beating the other person in the least number of moves.<br>
+<br>
+And finally, the won method.  This is a pretty simple algorithm, although there are a lot of parts to it, so let’s go through them one at a time.  There are obviously many ways of writing this code, this is just one way.<br>
+<br>
+won(val, A)<br>
+	return checkCol(val, A) || checkRow(val, A) || diag(val, A) || diag2(val, A)<br>
+<br>
+In order to win tic tac toe, you only have to win on one axis.  I’ve defined diag() to be top left to bottom right, and diag2() to be top right to bottom left.<br>
+<br>
+<br>
+checkCol(val, A)<br>
+&emsp;for every row, i, in A<br>
+&emsp;&emsp;check <— true<br>
+&emsp;&emsp;for every column, j, in A<br>
+&emsp;&emsp;&emsp;if A[j][i] does not equal val<br>
+&emsp;&emsp;&emsp;&emsp;check = false<br>
+&emsp;&emsp;if check = true<br>
+&emsp;&emsp;&emsp;return true<br>
+<br>
+&emsp;return false<br>
+<br>
+checkRow(val, A)<br>
+&emsp;for every row, i, in A<br>
+&emsp;&emsp;check <— true<br>
+&emsp;&emsp;for every column, j, in A<br>
+&emsp;&emsp;&emsp;if A[i][j] does not equal val<br>
+&emsp;&emsp;&emsp;&emsp;check = false<br>
+&emsp;&emsp;if check = true<br>
+&emsp;&emsp;&emsp;return true<br>
+<br>
+&emsp;return false<br>
+<br>
+diag(val, A)<br>
+&emsp;for every column, i, in A<br>
+&emsp;&emsp;if A[i][i] does not equal val<br>
+&emsp;&emsp;&emsp;return false<br>
+&emsp;return true<br>
+<br>
+<br>
+diag2(val, A)<br>
+&emsp;for every column, i, in A<br>
+&emsp;&emsp;if A[Length of A - i][i] does not equal val<br>
+&emsp;&emsp;&emsp;return false<br>
+&emsp;return true<br>
+<br>
+checkRow and checkCol work on the same principle.  Because we know what value we are looking for, it simplifies the process.  Assume that any column or row is true.  Go through that column or row and if it never hits a value that isn't the value we are looking, val, then all the values in that column must be that val.  So return true.  If one of them isn’t val, then we go on to the next column or row.  If no column or row meets the criteria, then return false.<br>
+<br>
+diag() and diag2() work because the board is a sqaure.  By going through the columns, to go top right to bottom left, subtract the number of the columns from the column you’re on and increment the rows.  To go the other way, simply plug the current increment the row and column at the same time, and you move along the diagonal.</p>
+            </div>
+            <div id="sudokusolv" class="section scrollspy">
+                <h5 class="black-text">Sudoku Solver</h5>
+                <p>Although making a computer to solve a sudoku puzzle may seem difficult, it’s actually one of the easier recursive algorithms to program.  You can download the code below in Javascript, or Java and test it yourself.  You can also plug in your own sudoku board with the button linked below.<br>
+                    <a class="waves-effect waves-light btn modal-trigger blue" href="#modal2">Open Sudoku Solver</a> <br><br>
+Click one of the options below to download:<br>
+<a class="waves-effect waves-light btn blue" href="http://techguyification.com/funprojects/sudoku.java" download>Java Code</a> <a class="waves-effect waves-light btn blue" href="http://techguyification.com/funprojects/sudokusolver.js" download="Sudoku_Code"> Javascript Code</a>
+<br>
+<br>
+The pseudocode for the algorithm is as follows:<br>
+I am assuming that we are passed in a 9x9 array containing the few values given on the board.<br>
+<br>
+sudokusolver(A)<br>
+&emsp;for i in every row of A<br>
+&emsp;&emsp;for j in every column of A<br>
+&emsp;&emsp;&emsp;if the current space is not empty <br>
+&emsp;&emsp;&emsp;&emsp;continue<br>
+&emsp;&emsp;for num in [1-9]<br>
+&emsp;&emsp;&emsp;if legalSquare(num, i, j, A)<br>
+&emsp;&emsp;&emsp;&emsp;A[i][j] = num<br>
+&emsp;&emsp;&emsp;&emsp;if sudokusolver(A)<br>
+&emsp;&emsp;&emsp;&emsp;&emsp;return true<br>
+&emsp;&emsp;&emsp;else <br>
+&emsp;&emsp;&emsp;&emsp;A[i][j] = empty<br>
+&emsp;&emsp;return false<br>
+&emsp;return true<br>
+<br>
+<br>
+The algorithm recursively tries every number at every square, one at a time.  If it gets to a point where it cannot insert a number, then it backtracks until it finds a number it can put in a square, and continues on from there.<br>
+<br>
+There are a few helper methods used to implement legalsquare().  The pseudocode for those is as follows:<br>
+legalSquare(val, col, row, A)<br>
+&emsp;return checkSquare(val, col, row, A) AND checkRow(val, row, A) AND checkCol(val, col, A)<br>
+<br>
+<br>
+checkSquare(val, col, row, A)<br>
+&emsp;col = FLOOR(col/3) * 3<br>
+&emsp;row = FLOOR(row/3) *3<br>
+<br>
+&emsp;for i in [col —> col+3] //go through columns<br>
+&emsp;&emsp;for j in [row —> row+3] // go through rows<br>
+&emsp;&emsp;&emsp;if A[i][j] == val<br>
+&emsp;&emsp;&emsp;&emsp;return false<br>
+&emsp;return true<br>
+<br>
+checkRow(val, row, A)<br>
+&emsp;for i in columns of A<br>
+&emsp;&emsp;if A[i][row] = val<br>
+&emsp;&emsp;&emsp;return false<br>
+&emsp;return true<br>
+<br>
+<br>
+checkCol(val, col, row, A)<br>
+&emsp;for i in rows of A<br>
+&emsp;&emsp;if A[col][i] = val<br>
+&emsp;&emsp;&emsp;return false<br>
+&emsp;return true<br>
+<br>
+LegalSquare assumes that there cannot already be a value (val) in either the closest box (3x3), current column or current row.  If one of the helper methods (checkSquare, checkRow, or checkCol) return false, it means that one of them encountered that value.  Meaning that is not a legal square for num.  So legalSquare returns false.<br>
+<br>
+I think checkCol and checkRow are pretty self-explanatory.  They are passed in the column or row, respectively.  They go through every item of that column or row, and if they hit a value, val, they return false.  If they never do, return true.<br>
+<br>
+checkSquare has another interesting problem, given any square, it must be able to find the start of the 3x3 box it’s in.  This calculation we do in the first two lines of the function.  The for loops then go 3 to the right, and 3 down, meaning it will cover all 9 squares in that 3x3 box, and check for the value in that box.</p>
+                
+            </div>
+            <div id="sortingalg" class="section scrollspy">
+                <h5 class="black-text">Stack Sorter Algorithm</h5>
+                <p>I worked with another student, Ali Siddiqui, while attending the University of Victoria, and together we developed a new way of sorting integers using a linked list of stacks.<br>
+
+<br>
+Click one of the options below to download:<br>
+<a class="waves-effect waves-light btn blue" href="funprojects/Stack_sorter.zip" download="Stack_Sorter">Java Code</a><br>
+
+<br>
+The pseudocode for the main function of the algorithm is as follows<br>
+<br>
+sort(A)<br>
+&emsp;Create new linked list of stacks<br>
+&emsp;for i in 0 —> length of A<br>
+&emsp;&emsp;insert(a[i])<br>
+	<br>
+&emsp;i <— 0<br>
+&emsp;for i in 0 —> length of A<br>
+&emsp;&emsp;a[i] = remove()<br>
+&emsp;&emsp;increment i<br>
+<br>
+The sort() method simply reads every value of the array, A, and calls the insert method to insert them into the list.  It then calls the remove method to systematically insert the items back into the array in sorted order.<br>
+<br>
+<br>
+<br>
+The pseudocode for the insert function is as follows:<br>
+<br>
+insert(value)<br>
+&emsp;newNode = new node() //make a new node<br>
+<br>
+&emsp;if head == null // if the list is empty<br>
+&emsp;&emsp;push value onto the stack of the new node<br>
+&emsp;&emsp;head = newNode<br>
+&emsp;else <br>
+&emsp;&emsp;node curr<br>
+&emsp;&emsp;if top of head stack >= value <br>
+&emsp;&emsp;&emsp;push value onto head stack<br>
+&emsp;&emsp;&emsp;return<br>
+		<br>
+&emsp;&emsp;for every node in list<br>
+&emsp;&emsp;if value <= top of current node stack<br>
+&emsp;&emsp;&emsp;push value onto node stack<br>
+&emsp;&emsp;&emsp;return<br>
+		<br>
+&emsp;&emsp;push the value onto newNode<br>
+&emsp;&emsp;add newNode to end of the list<br>
+		<br>
+<br>
+<br>
+The insert function creates a new node. If there are no nodes in the list, it inserts the value passed in on the new node.  It then makes head node equal to the new node.   If there is at least one element in the list, it checks to see if the value is smaller than the top of the first list. If it is, it pushes the node onto the top of the first stack and returns. If it is not, it continues through the list and checks the top of every stack until it finds a stack such that the top element is larger than the value.  If it finds a stack, it adds the value to the top of the stack.  If it gets to the end of the list, without finding a stack, it creates a new node at the end of the list, and puts the value on the stack of the newly created node.<br>
+<br>
+<br>
+<br>
+The pseudocode for the remove function is as follows:<br>
+<br>
+remove() <br>
+&emsp;create new node min<br>
+	<br>
+&emsp;keep track of previous node, initialize to null.<br>
+<br>
+&emsp;for every node in list<br>
+&emsp;&emsp;if top of min > top of next node<br>
+&emsp;&emsp;&emsp;min = next node<br>
+&emsp;&emsp;&emsp;previous = current node<br>
+<br>
+&emsp;a <— pop min<br>
+	<br>
+&emsp;if stack on min is empty<br>
+&emsp;&emsp;if head = min<br>
+&emsp;&emsp;&emsp;head = head.next // remove first node<br>
+&emsp;&emsp;if min is the end of the list<br>
+&emsp;&emsp;&emsp;prev.next = null //remove last node<br>
+&emsp;&emsp;else <br>
+&emsp;&emsp;&emsp;prev.next = min.next //remove node from middle of the list<br>
+<br>
+&emsp;return a<br>
+<br>
+The remove function goes through the list every time, and pops the stack with the smallest element.  It then checks to see if that stack is now empty, if it is, it removes that node from the list.<br>
+<br>
+Here is a diagram of what the stack might look like after the insertion step:<br>
+<br>
+<p>Sample Input: [5 3 8 4 6 10 7 8 5 5]</p>
+<img src="funprojects/sortingDiagram.png" style="width: 100%;">
+<br>
+<br>
+<br>
+<p>So how does this algorithm do in terms of performance?  Below is a graph comparing our algorithm to a number of other popular algorithms.  You can download all of the code to test it yourself.  In the testing functions, we created an array of varying size, and generated random numbers, and ran tests where each algorithm would sort the same array.  We do this multiple times, and take the average between tests.  When running the algorithm, you can specify the maximum size of the array you want to test, as well as the number of times you want to run each test.  The code provided is written in Java.</p>
+<canvas id="sortPerf" width="400" height="400" style="width: 100% !important;"></canvas>
+           
+<p>You may have noticed that there are 3 versions of the algorithm in the graph above.  The first version of the stack sorter algorithm used the pseudocode described above and used the built-in Java stack library.  The second version was exactly the same as the first version, except we implemented stacks ourselves using linked lists.  Going from the first to second version made a huge difference in performance, meaning out algorithm was now faster than Insertion sort.  It turns out the built-in stacks library was written with Java 1.0 and never updated.  So it isn't very well optimized for performance.  The third version we introduced a hash table.  The hash table makes an array based on powers of 10.  We did this so that each list would be smaller, meaning it should theoretically take less time to sort.  I thought I would explain version 2 in pseudocode for simplicity.  The code available to download is version 3. (as of Nov. 2015)<br>
+<br>
+Although we didn't implement them, we also came up with some theoretical ways of making our algorithm faster.  If there was a way to further hash the values, such as by multiples of 10 or 100, each linked list would be shorter, meaning when inserting and removing, performance would be improved.  Another possible way would be to store the minimum and second minimum from the stacks.  And as long as the minimum stack is less than the top of the second minumum, remove from that stack, then return an array.  This means that it cuts down on the number of times we go through the entire linked list.  Also, if there was a way for a node to point to the next one during the insert process, then the remove function would be linear.</p>
+<br>
+<br>
+<p>Our system specs and Java version are as follows:</p>
+<li>Macbook Pro 13-inch, Mid 2012</li>
+<li>Core i5 @ 2.50Ghz</li>
+<li>8GB Ram at 1333 Mhz DDR3</li>
+<li>java version "1.8.0_60"</li>
+<li>Java(TM) SE Runtime Environment (build 1.8.0_60-b27)</li>
+<li>Java HotSpot(TM) 64-Bit Server VM (build 25.60-b23, mixed mode)</li>
+<p>No other programs were open on the machine at the time.</p>
+<script>
+    
+    var options = {
+        responsive : true,
+        animation: true,
+        barValueSpacing : 5,
+        barDatasetSpacing : 1,
+        tooltipFillColor: "rgba(0,0,0,0.8)",                
+        multiTooltipTemplate: "<%= datasetLabel%> - <%= value %>",
+        
+        ///Boolean - Whether grid lines are shown across the chart
+        scaleShowGridLines : true,
+
+        //String - Colour of the grid lines
+        scaleGridLineColor : "rgba(0,0,0,.05)",
+
+        //Number - Width of the grid lines
+        scaleGridLineWidth : 1,
+
+        //Boolean - Whether to show horizontal lines (except X axis)
+        scaleShowHorizontalLines: true,
+
+        //Boolean - Whether to show vertical lines (except Y axis)
+        scaleShowVerticalLines: true,
+
+        //Boolean - Whether the line is curved between points
+        bezierCurve : true,
+
+        //Number - Tension of the bezier curve between points
+        bezierCurveTension : 0.4,
+
+        //Boolean - Whether to show a dot for each point
+        pointDot : true,
+
+        //Number - Radius of each point dot in pixels
+        pointDotRadius : 4,
+
+        //Number - Pixel width of point dot stroke
+        pointDotStrokeWidth : 1,
+
+        //Number - amount extra to add to the radius to cater for hit detection outside the drawn point
+        pointHitDetectionRadius : 20,
+
+        //Boolean - Whether to show a stroke for datasets
+        datasetStroke : true,
+
+        //Number - Pixel width of dataset stroke
+        datasetStrokeWidth : 2,
+
+        //Boolean - Whether to fill the dataset with a colour
+        datasetFill : true,
+
+        //String - A legend template
+        legendTemplate : "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<datasets.length; i++){%><li><span style=\"background-color:<%=datasets[i].strokeColor%>\"></span><%if(datasets[i].label){%><%=datasets[i].label%><%}%></li><%}%></ul>"
+
+    };
+    var data = {
+    labels: ["10000", "20000", "30000", "40000", "50000", "60000", "70000", "80000", "90000", "100000"],
+    datasets: [
+        {
+            label: "Selection Sort",
+            fillColor: "rgba(16,16,16,0.2)",
+            strokeColor: "rgba(16,16,16,1)",
+            pointColor: "rgba(16,16,16,1)",
+            pointStrokeColor: "#fff",
+            pointHighlightFill: "#fff",
+            pointHighlightStroke: "rgba(16,16,16,1)",
+            data: [0.0, 49.52, 182.46, 386.63, 695.91, 1050.67, 1499.13, 2020.44, 2650.72, 3368.41]
+        },
+        {
+           label: "Stack Sorter V1",
+           fillColor: "rgba(32,32,32,0.2)",
+           strokeColor: "rgba(32,32,32,1)",
+           pointColor: "rgba(32,32,32,1)",
+           pointStrokeColor: "#fff",
+           pointHighlightFill: "#fff",
+           pointHighlightStroke: "rgba(32,32,32,1)",
+           data: [0.0, 55.86, 138.49, 269.14, 443.68, 634.25, 868.39, 1108.17, 1341.1, 1577.54]
+        },
+        {
+           label: "Insertion Sort",
+           fillColor: "rgba(56,56,56,0.2)",
+           strokeColor: "rgba(56,56,56,1)",
+           pointColor: "rgba(56,56,56,1)",
+           pointStrokeColor: "#fff",
+           pointHighlightFill: "#fff",
+           pointHighlightStroke: "rgba(56,56,56,1)",
+           data: [0.0, 13.97, 54.37, 117.14, 209.25, 315.85, 450.3, 607.85, 798.25, 1012.68]
+        },
+        {
+           label: "Stack Sorter V2",
+           fillColor: "rgba(80,80,80,0.2)",
+           strokeColor: "rgba(80,80,80,1)",
+           pointColor: "rgba(80,80,80,1)",
+           pointStrokeColor: "#fff",
+           pointHighlightFill: "#fff",
+           pointHighlightStroke: "rgba(80,80,80,1)",
+           data: [0.0, 17.42, 52.8, 97.52, 162.66, 239.68, 331.58, 438.02, 564.61, 664.3]
+        },
+        {
+           label: "Stack Sorter V3",
+           fillColor: "rgba(112,112,112,0.2)",
+           strokeColor: "rgba(112,112,112,1)",
+           pointColor: "rgba(112,112,112,1)",
+           pointStrokeColor: "#fff",
+           pointHighlightFill: "#fff",
+           pointHighlightStroke: "rgba(112,112,112,1)",
+           data: [0.0, 12.12, 35.92, 65.45, 109.28, 157.96, 215.49, 283.13, 359.97, 450.15]
+        },
+        {
+            label: "Merge Sort",
+            fillColor: "rgba(136,136,136,0.2)",
+            strokeColor: "rgba(136,136,136,1)",
+            pointColor: "rgba(136,136,136,1)",
+            pointStrokeColor: "#fff",
+            pointHighlightFill: "#fff",
+            pointHighlightStroke: "rgba(136,136,136,1)",
+            data: [0.0, 1.39, 2.73, 4.05, 5.5, 6.83, 8.36, 9.84, 11.72, 13.39]
+        },
+        {
+            label: "Heap Sort",
+            fillColor: "rgba(168,168,168,0.2)",
+            strokeColor: "rgba(168,168,168,1)",
+            pointColor: "rgba(168,168,168,1)",
+            pointStrokeColor: "#fff",
+            pointHighlightFill: "#fff",
+            pointHighlightStroke: "rgba(168,168,168,1)",
+            data: [0.0, 1.25, 2.67, 3.87, 5.4, 6.78, 8.14, 9.44, 11.17, 12.77]
+        },
+        {
+            label: "Quick Sort",
+            fillColor: "rgba(216,216,216,0.2)",
+            strokeColor: "rgba(216,216,1)",
+            pointColor: "rgba(216,216,1)",
+            pointStrokeColor: "#fff",
+            pointHighlightFill: "#fff",
+            pointHighlightStroke: "rgba(216,216,216,1)",
+            data: [0.0, 0.93, 2.05, 2.92, 3.85, 4.85, 5.82, 6.97, 8.12, 9.1]
+        }
+    ]
+};
+    
+    // Get context with jQuery - using jQuery's .get() method.
+    var ctx = $("#sortPerf").get(0).getContext("2d");
+    // This will get the first returned node in the jQuery collection.
+    var myLineChart = new Chart(ctx).Line(data, options);
+    
+    
+    myLineChart.resize();
+    
+    
+</script>
+            </div>
+        </div>
+        <div class="col hide-on-small-only m3 l2">
+            <ul class="section table-of-contents">
+                <li><a href="#blockbreaker">Block Breaker</a></li>
+                <li><a href="#tictac">Unbeatable Tic-Tac-Toe</a></li>
+                <li><a href="#sudokusolv">Sudoku Solver</a></li>
+                <li><a href="#sortingalg">Stack Sorter</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<footer class="page-footer grey">
+    <div class="container">
+        <div class="row center">
+            <div class="icon-block">
+                <h4 class="center deep-orange-text"><i class="material-icons">email</i></h4>
+            </div>
+            <div class="col s8 offset-s2">
+                <h5 class="white-text">Contact Me</h5>
+                <p class="grey-text text-lighten-4">I really appreciate your feedback.<br>
+                If you have any questions, queries, quibbles, be sure to drop me a line using the link below.<br>
+                I look forward to hearing from you.</p>
+                <div class="row center">
+                    <a href="mailto:mattpaletta@gmail.com" id="email-button" class="btn-large waves-effect waves-light blue lighten-1">Send Email</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            Powered by Techguyfication &copy; 2015
+        </div>
+    </div>
+</footer>
+<!-- TIC TAC TOE MODAL -->
+<div id="modal1" class="modal">
+<div class="modal-content">
+    <h4>AI Tic Tac Toe</h4><br>
+    <object type="text/html" data="funprojects/tictac.html" style="min-width: 100%; min-height: 300px;">
+        <p>The Tic-Tac-Toe Board Could Not Be Displayed At This Time.</p>
+    </object>
+    
+</div>
+<div class="modal-footer">
+  <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+</div>
+</div>
+<!--<script src="funprojects/tictac.js"></script>-->
+
+<!-- SUDOKU -->
+<div id="modal2" class="modal">
+<div class="modal-content">
+    <h4>Sudoku Solver</h4>
+    Due to the size of the puzzle, this works best on larger screens.  You may have to scroll down to see the rest of the puzzle.<br>
+    <object type="text/html" data="funprojects/sudokusolver.html" style="min-width: 500px; min-height: 650px;">
+        <p>The Sudoku Puzzle Could Not Be Displayed At This Time.</p>
+    </object>
+</div>
+<div class="modal-footer">
+  <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+</div>
+</div>
+    
+<div id="modal3" class="modal">
+<div class="modal-content">
+    <h4>Block Breaker</h4>
+    Use the arrow keys to move your paddle.  Good Luck!<br>
+    <div style="width: 510px; height: 520px;" class="center">
+    <object type="text/html" data="funprojects/bricks.html" style="width: 100%; height: 100%;">
+        <p>Block Breaker Could Not Be Displayed At This Time.</p>
+    </object>
+    </div>
+</div>
+<div class="modal-footer">
+  <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+</div>
+</div>
+
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="js/materialize.js"></script>
+<script src="js/init.js"></script>
+<script>
+$(document).ready(function(){
+    $('.scrollspy').scrollSpy();
+});
+$(document).ready(function(){
+    $('.table-of-contents').pushpin({ top: $('.table-of-contents').offset().top });
+});
+$(document).ready(function(){
+    // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+    $('.modal-trigger').leanModal();
+});
+</script>
+</body>
+</html>
